@@ -1,0 +1,32 @@
+.main{ 
+    position: relative; 
+    left: 200px; 
+} 
+ 
+.box{ 
+    display: flex; 
+    height: 150px; 
+    width: 150px; 
+    border-radius: 4px; 
+    font-size: 64px; 
+    justify-content: center; 
+    align-items: center; 
+} 
+ 
+.box:nth-child(1) { 
+    background-color: rgb(238, 104, 202);
+} 
+ 
+.box:nth-child(2){ 
+    position: absolute; 
+    left: 75px; 
+    top: 75px; 
+    background-color: rgb(81, 81, 196); 
+    z-index: 2; 
+} 
+ 
+.box:nth-child(3){ 
+    position: relative; 
+    left: 150px; 
+    background-color: rgb(238, 215, 83); 
+}
