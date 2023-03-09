@@ -30,3 +30,43 @@
     left: 150px; 
     background-color: rgb(238, 215, 83); 
 }
+
+ul {
+  list-style: none;
+}
+.overlay {
+  position: relative;
+  height: 772px;
+  width: 150px;
+  overflow: hidden;
+  background-color: grey;
+}
+
+.menu{
+  position: absolute;
+  left: 20px;
+  transition: transform 500ms ease;
+  writing-mode: vertical-rl;
+  padding-top: 20px;
+  height: 100%;
+}
+
+.overlay:hover .nav{
+  transform: translateX(0%);
+}
+
+.overlay:hover .menu{
+  transform: translateX(500%);
+}
+
+.nav {
+  position: absolute;
+  transform: translateX(-100%);
+  transition: transform 500ms ease;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
